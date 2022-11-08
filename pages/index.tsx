@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import About from '../components/About'
 import Experience from '../components/Experience'
+import Skills from '../components/Skills'
 
 
 
@@ -31,7 +32,9 @@ export default function Home() {
       <Experience/>
      </section>
      {/* Skills */}
-
+    <section id='skills' className='snap-center'>
+      <Skills/>
+    </section>
      {/* Projects */}
 
      {/* Contact Me */}

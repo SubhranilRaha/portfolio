@@ -21,11 +21,11 @@ function Hero({}: Props) {
        
         
         <Image
-        src={'/profilepicture.png'} 
+        src={'/profilepicture.png'}
         alt="" 
         width={500}
         height={500}
-        className='relative rounded-full h-36 w-36 mx-auto object-cover ' 
+        className='relative rounded-full h-36 w-36 mx-auto object-cover' 
         />
        
         <Image
