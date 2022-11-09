@@ -6,12 +6,14 @@ import Image from 'next/image'
 import About from '../components/About'
 import Experience from '../components/Experience'
 import Skills from '../components/Skills'
+import Project from '../components/Project'
+import Contact from '../components/Contact'
 
 
 
 export default function Home() {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth'>
+    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth'>
       <Head>
         <title>Subhranil Raha</title>
         <meta name="" content="" />
@@ -36,9 +38,13 @@ export default function Home() {
       <Skills/>
     </section>
      {/* Projects */}
-
+    <section id='projects' className='snap-center'>
+      <Project/>
+    </section>
      {/* Contact Me */}
-
+    <section id='contact' className='snap-center'>
+      <Contact/>
+    </section>
      {/* Footer */}
 
     </div>
