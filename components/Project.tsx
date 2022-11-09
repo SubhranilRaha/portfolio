@@ -9,7 +9,7 @@ function Project({}: Props) {
         <div className="relative w-full flex overlfow-x-scroll">
             
         </div>
-        <div className='w-full absolute top-[30%] bg-red-500 bg-opacity-20 left-0 h-[500px] -skew-y-12'></div>
+        <div className='w-full absolute top-[30%] bg-red-500 bg-opacity-20 left-0 h-[300px] -skew-y-12'></div>
     </div>
   )
 }

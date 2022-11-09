@@ -7,7 +7,7 @@ type Props = {}
 
 function Hero({}: Props) {
   return (
-    <div className='relative h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden pt-48'>
+    <div className='relative h-screen flex flex-col space-y-8 items-center justify-center text-center pt-48'>
         
         <BGcircles/>
        
@@ -51,7 +51,7 @@ function Hero({}: Props) {
           />
           </h1>
           </div>
-          <div className="pt-5">
+          <div className="pt-5 z-50">
           <Link href='#about'>
           <button className='heroButton'>About</button>
           </Link>

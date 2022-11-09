@@ -8,12 +8,13 @@ import Experience from '../components/Experience'
 import Skills from '../components/Skills'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
+import Link from 'next/link'
 
 
 
 export default function Home() {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth'>
+    <div className='bg-[rgb(37,38,42)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar-track-gray-400/0 scrollbar-thumb-red-400/80 scrollbar-thin scrollbar-thumb-rounded-full'>
       <Head>
         <title>Subhranil Raha</title>
         <meta name="" content="" />

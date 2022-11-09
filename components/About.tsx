@@ -54,13 +54,14 @@ function About({}: Props) {
         </motion.div>
 
         <svg className='absolute z-20 -top-[1px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#242424" fill-opacity="1" d="M0,0L80,16C160,32,320,64,480,69.3C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+        <path fill="#25262a" fill-opacity="1" d="M0,0L80,16C160,32,320,64,480,69.3C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
         </svg>
 
         <div className="h-screen bg-[url('/about.gif')]  bg-cover bg-right bg-fixed brightness-50 saturate-[.80]">
         </div>
+
         <svg className='absolute -bottom-[1px] rotate-180' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#242424" fill-opacity="1" d="M0,0L80,16C160,32,320,64,480,69.3C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+        <path fill="#25262a" fill-opacity="1" d="M0,0L80,16C160,32,320,64,480,69.3C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
         </svg>
         
     </div>
