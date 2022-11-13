@@ -24,7 +24,8 @@ function Contact({}: Props) {
     <div className='h-screen relative flex overflow-hidden flex-col px-10 text-left md:flex-row max-w-full justify-evenly mx-auto items-center'>
         <h3 className="absolute top-12 uppercase tracking-[20px] text-gray-500 test-2xl">contact</h3>
         <div className='flex flex-col space-y-10'>
-            <h4 className="text-4xl font-semibold text-center">Got just what you need?{" "}<span className='decoration-red-500 underline'>Lets Talk.</span>
+            <h4 className="relative text-4xl font-semibold text-center">Got just what you need?{" "}
+            <span className='decoration-red-500 underline'>Lets Talk.</span>
             </h4> 
             <div className='space-y-10'>
                 <div className='flex items-center space-x-5 justify-center'>

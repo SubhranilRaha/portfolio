@@ -16,7 +16,7 @@ function Hero({}: Props) {
         alt="" 
         width={200}
         height={200}
-        className='absolute top-0 lg:top-10 left-0 lg:-left-12 -translate-y-20 rotate-45 lg:h-[480px] lg:w-[350px] md:h-[400px] md:w-[300px]' 
+        className='absolute top-0 lg:top-10 left-0 lg:-left-12 -translate-y-20 rotate-45 lg:h-[480px] lg:w-[350px] md:h-[400px] md:w-[300px] z-50' 
         />
        
         
