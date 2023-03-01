@@ -9,6 +9,7 @@ import Skills from '../components/Skills'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
 import Link from 'next/link'
+import Navbar from '../components/Navbar'
 
 
 
@@ -21,7 +22,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      {/* Header */}
-        <Header/>
+     <div className="absolute right-0">
+
+     <Navbar />
+     </div>
+        
      {/* Hero */}
       <section id='hero' className='snap-start'>
         <Hero/>
