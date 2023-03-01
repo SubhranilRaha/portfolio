@@ -12,14 +12,14 @@ type Props = {};
 function Hero({}: Props) {
   return (
     <>
-      <div className="relative h-screen flex flex-col space-y-8 items-center justify-center text-center pt-48">
+      <div className="relative h-screen flex flex-col space-y-8 items-center justify-center text-center pt-32">
         <BGcircles />
         <Image
           src={"/headphone.png"}
           alt=""
           width={200}
           height={200}
-          className="absolute top-0 lg:top-10 left-0 lg:-left-12 xl:-translate-y-16 rotate-45 lg:h-[480px] lg:w-[350px] md:h-[400px] md:w-[300px] z-40"
+          className="absolute -top-24 lg:-top-10 left-0 lg:-left-12 xl:-translate-y-24 rotate-45 lg:h-[480px] lg:w-[350px] md:h-[400px] md:w-[300px] z-40 lg:z-50 "
         />
         <Image
           src={"/profilepicture.png"}
@@ -41,7 +41,7 @@ function Hero({}: Props) {
             Software Developer
           </h2>
           <div className="text-4xl lg:text-5xl font-semibold px-10 ">
-            <h1 className=" h-18 ">
+            <h1 className=" h-18 pt-2">
               <Typewriter
                 words={[
                   "Hi, The Name's Subhranil Raha",
@@ -58,27 +58,14 @@ function Hero({}: Props) {
               />
             </h1>
           </div>
-          {/* <div className="pt-5 z-50">
-          <Link href='#about'>
-          <button className='heroButton'>About</button>
-          </Link>
-          <Link href='#experience'>
-          <button className='heroButton'>Experience</button></Link>
-          <Link href='#projects'>
-          <button className='heroButton'>Projects</button>
-          </Link>
-          <Link href='#contact'>
-          <button className='heroButton'>Contact</button></Link>
-          <Link href='about'>
-          <button className='heroButton border-gray-400'>Resume</button></Link>
-          </div> */}
         </div>
-        <div className="flex w-[300px] justify-between">
-          <BsGithub className="text-[25px] md:text-[30px] xl:text-[35px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
-          <BsInstagram className="text-[25px] md:text-[30px] xl:text-[35px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
-          <FiTwitter className="text-[25px] md:text-[30px] xl:text-[35px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
-          <FaLinkedin className="text-[25px] md:text-[30px] xl:text-[35px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
+        <div className="flex min-w-[250px] max-w-[300px] justify-between">
+          <BsGithub className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
+          <BsInstagram className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400"/>
+          <FiTwitter className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
+          <FaLinkedin className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
         </div>
+        <iframe title="myFrame" className="h-14 z-50" src="https://embed.lottiefiles.com/animation/96514"></iframe>
       </div>
     </>
   );

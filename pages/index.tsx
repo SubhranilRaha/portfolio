@@ -1,14 +1,9 @@
 import Head from 'next/head'
-import Header from '../components/Header'
 import Hero from '../components/Hero'
-import styles from '../styles/Home.module.css'
-import Image from 'next/image'
 import About from '../components/About'
 import Experience from '../components/Experience'
-import Skills from '../components/Skills'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
-import Link from 'next/link'
 import Navbar from '../components/Navbar'
 
 
@@ -22,13 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      {/* Header */}
-     <div className="absolute right-0">
-
+     <div className="snap-start">
      <Navbar />
      </div>
         
      {/* Hero */}
-      <section id='hero' className='snap-start'>
+      <section id='hero' className='snap-center'>
         <Hero/>
       </section>
      {/* About */}
@@ -40,9 +34,7 @@ export default function Home() {
       <Experience/>
      </section>
      {/* Skills */}
-    <section id='skills' className='snap-center'>
-      <Skills/>
-    </section>
+
      {/* Projects */}
     <section id='projects' className='snap-center'>
       <Project/>
