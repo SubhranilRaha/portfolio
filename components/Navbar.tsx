@@ -21,7 +21,7 @@ const Navbar = () => {
               </h1>
               <AiOutlineCloseCircle className="text-[28px]" />
             </div>
-            <ul className="flex md:flex-col md:pt-5 lg:flex-row flex-col lg:items-center gap-[4vw] pb-3 lg:justify-end pr-10 font-rob  pl-5  shadow-md md:shadow-none lg:shadow-none rounded-bottom-xl">
+            <ul className="flex md:flex-col md:pt-5 lg:flex-row flex-col lg:items-center gap-[6vh] pb-3 lg:justify-end pr-10 font-rob  pl-5  shadow-md md:shadow-none lg:shadow-none rounded-bottom-xl pt-5">
               <li className="hover:text-gray-400 pt-3 md:pt-0 lg:pt-0">
                 <a
                   onClick={() => {
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <button className="py-2 px-4 border-2 border-[#e75151] rounded text-[#e75151]">
+                <button className="py-2 px-4 border-2 border-[#e75151] rounded text-[#e75151] mb-5">
                   Resume
                 </button>
               </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <div className="hidden lg:block pt-5 z-50 ">
+        <div className="hidden lg:block pt-5 z-50 absolute">
           <ul className="flex items-center gap-[2vw] pb-3 justify-end pr-10 font-rob pl-5 w-screen">
             <li className="hover:text-gray-400 pt-3 md:pt-0 lg:pt-0">
               <a href="#about">

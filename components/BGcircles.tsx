@@ -14,7 +14,7 @@ function BGcircles({}: Props) {
         <div className='absolute border border-[#333333] rounded-full h-[250px] w-[250px] mt-52'/>
         <div className='absolute border border-[#e75151] rounded-full h-[500px] w-[500px] mt-52 animate-pulse'/>
         <div className='absolute border border-[#333333] rounded-full h-[610px] w-[610px] mt-52 '/>
-        <div className='absolute border border-[#333333] rounded-full h-[800px] w-[800px] mt-52 z-40'/>
+        <div className='absolute border border-[#333333] rounded-full lg:h-[800px] lg:w-[800px] h-[750px] w-[750px] mt-52 z-40'/>
     </motion.div>
   )
 }

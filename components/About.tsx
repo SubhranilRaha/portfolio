@@ -1,59 +1,49 @@
-import React from 'react'
-import {motion} from "framer-motion";
-type Props = {}
+import {MdArrowForward} from 'react-icons/md'
 
-function About({}: Props) {
+function About() {
   return (
-    <div className="relative h-screen">
-        <motion.div 
-        initial={{opacity:0}}
-        whileInView={{opacity:1}}
-        transition={{duration:1.5}}
-        className='absolute h-screen w-screen z-10 '>
-        <div className="flex flex-col items-center justify-center lg:mx-20">
-        <div className="flex flex-col lg:flex-row h-screen justify-center lg:items-center">
-        <motion.img id='small screen'
-            initial={{
-                x:-200,
-                opacity:0
-            }}
-            transition={{
-                duration:1.5,
-            }}
-            whileInView={{opacity:1 ,x:0}}
-            viewport={{once:true}}
-            className="w-36 h-36 rounded-full object-cover
-            border-2 mx-auto mt-12 lg:hidden md:hidden"
-            src='/abtpic.png'
-            ></motion.img>
-            <motion.img id='large screen'
-            initial={{
-                x:-200,
-                opacity:0
-            }}
-            transition={{
-                duration:1.5,
-            }}
-            whileInView={{opacity:1 ,x:0}}
-            viewport={{once:true}}
-            className="lg:w-64 lg:h-64 md:w-60 md:h-60 lg:rounded-3xl md:rounded-[60px] object-cover
-            border-4 mx-auto mt-10 hidden lg:block md:block"
-            src='/abtpic.png'
-            ></motion.img>
-            <div className=" space-y-5 md:space-y-7 lg:space-y-10 px-10 lg:px-32 py-10 text-center flex flex-col items-center">
-            <h3 className="text-2xl font-semibold lg:text-5xl md:text-4xl w-fit">Here is a little <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-500 relative inline-block">
-            <span className="relative text-white">background</span>
-            </span> !</h3>
-            <div className="lg:w-[500px] lg:text-xl md:text-lg lg:space-y-10 md:space-y-7 space-y-5 md:w-[600px]">
-            <p>I am Subhranil Raha, a BTECH Undergrad from Calcutta. Someone who enjoys making cool looking websites that are live on the internet while having hot coffee and listening to chill music. I like to Explore blockchain technology and make Dapps after playing with my cat Puchku :3</p>
-            <p>I have done <span className=''>HTML</span> , CSS and Javascript along with React and Next JS. Now I have entered this revolutionary technology called Blockchain learning solidity, hardhat and ethers JS. I am currently Looking for freelancing jobs to feed my pets :/ and to build my dream setup.</p>
-            </div>
-            </div>
-            </div>
-            </div>
-        </motion.div>
+
+    <div className="relative h-screen w-full flex flex-col justify-center p-5 md:p-20 lg:p-0 -translate-y-10 lg:translate-y-0">
+      <h1 className="text-[2.5rem] font-mono mt-20 ml-5">About Me</h1>
+      <div className="mx-5 my-6 flex flex-col gap-5 text-sm text-gray-300 ">
+        <p>
+          Hello, my name is Subhranil Raha, a BTECH Undergrad from Kolkata who
+          likes building things for the web.
+        </p>
+        <p>
+          My expertise in web development extends to both front-end and back-end
+          technologies, including HTML, CSS, JavaScript, React, Node.js, and
+          more. I am committed to building responsive, user-friendly, and
+          scalable web applications that provide an exceptional user experience.
+        </p>
+        <p>
+          My experience in developing blockchain applications includes creating
+          custom smart contracts, designing and building decentralized
+          applications (dApps), and developing blockchain-based solutions with
+          the help of technologies such as solidity, hardhat, ethers and much
+          more.
+        </p>
+        <p>
+          If you are looking for a skilled web and blockchain developer to take your
+          project to the next level, I would be honored to work with you.
+        </p>
+        <a className='lg:hidden' href="#skills">
+        <div className="bg-[#e75151] w-40 h-8 text-lg flex justify-center items-center rounded-xl text-stone-50 hover:scale-110 p-5 hover:cursor-pointer transition">
+            Know more
+        <MdArrowForward className='ml-2'/>
+        </div>
+        </a>
+        <a className='hidden lg:block' href="#experience">
+        <div className="bg-[#e75151] w-40 h-8 text-lg flex justify-center items-center rounded-xl text-stone-50 hover:scale-110 p-5 hover:cursor-pointer transition ">
+            Know more
+        <MdArrowForward className='ml-2'/>
+        </div>
+        </a>
+      </div>
+      <div className='w-screen absolute top-[30%] bg-red-500 bg-opacity-20 left-0 h-[300px] -skew-y-12 lg:hidden'></div>
     </div>
-  )
+   
+  );
 }
 
-export default About
+export default About;
