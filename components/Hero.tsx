@@ -5,6 +5,8 @@ import { FiTwitter } from "react-icons/fi";
 import { Typewriter } from "react-simple-typewriter";
 import BGcircles from "./BGcircles";
 import Navbar from "./Navbar";
+import Lottie from "lottie-react";
+import scrollJ from '../public/scroll.json'
 
 
 type Props = {};
@@ -65,7 +67,8 @@ function Hero({}: Props) {
           <FiTwitter className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
           <FaLinkedin className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
         </div>
-        <iframe title="myFrame" className="h-14 z-50" src="https://embed.lottiefiles.com/animation/96514"></iframe>
+        {/* <iframe title="myFrame" className="h-14 z-50" src="https://embed.lottiefiles.com/animation/96514"></iframe> */}
+        <Lottie className="h-14" animationData={scrollJ} loop={true} />
       </div>
     </>
   );

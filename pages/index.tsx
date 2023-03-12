@@ -34,9 +34,9 @@ export default function Home() {
       </div>
 
       {/* Experience */}
-      <section id="experience" className="snap-center">
+      {/* <section id="experience" className="snap-center">
         <Experience />
-      </section>
+      </section> */}
       {/* Projects */}
       <section id="projects" className="snap-center">
         <Project />
