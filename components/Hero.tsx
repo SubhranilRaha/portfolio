@@ -68,7 +68,9 @@ function Hero({}: Props) {
           <FaLinkedin className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
         </div>
         {/* <iframe title="myFrame" className="h-14 z-50" src="https://embed.lottiefiles.com/animation/96514"></iframe> */}
-        <Lottie className="h-14" animationData={scrollJ} loop={true} />
+        
+        <Lottie className="h-12" animationData={scrollJ} loop={true} />
+        
       </div>
     </>
   );

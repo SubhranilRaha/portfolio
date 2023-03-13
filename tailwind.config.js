@@ -7,6 +7,7 @@ module.exports = {
     fontFamily: {
       rob: ["Inconsolata", "monospace"],
       mono: ["Archivo Black", "sans-serif"],
+      plas: ["Plaster", "cursive"],
     },
   },
   plugins: [require('tailwind-scrollbar'),],

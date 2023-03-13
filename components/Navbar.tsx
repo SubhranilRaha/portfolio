@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <>
       <nav className="">
-        <div className="absolute right-0 z-50">
+        <div className="absolute right-0 z-50 ">
           {open ? (
-            <div className="w-screen z-50 bg-[rgb(37,38,42)]">
+            <div className="w-screen z-50 bg-[#2C2E33] ">
             <div
               onClick={() => {
                 setopen(!open);
@@ -19,7 +19,7 @@ const Navbar = () => {
               <h1 className="text-xl md:hidded lg:hidden">
                 Subhranil<span className="text-[#e75151]">Raha</span>.
               </h1>
-              <AiOutlineCloseCircle className="text-[28px]" />
+              <AiOutlineCloseCircle className="text-[28px] " />
             </div>
             <ul className="flex md:flex-col md:pt-5 lg:flex-row flex-col lg:items-center gap-[6vh] pb-3 lg:justify-end pr-10 font-rob  pl-5  shadow-md md:shadow-none lg:shadow-none rounded-bottom-xl pt-5">
               <li className="hover:text-gray-400 pt-3 md:pt-0 lg:pt-0">
@@ -67,13 +67,15 @@ const Navbar = () => {
             </ul>
             </div>
           ) : (
+            <div className="">
             <div
               onClick={() => {
                 setopen(!open);
               }}
-              className="hover:cursor-pointer md:hidded lg:hidden"
+              className="hover:cursor-pointer md:hidded lg:hidden m-2"
             >
-              <HiOutlineMenuAlt2 className=" sticky text-[28px] z-50 mt-3 mr-3" />
+              <HiOutlineMenuAlt2 className=" sticky text-[28px] z-50  bg-[#2C2E33] p-2 h-10 w-10 rounded-full" />
+            </div>
             </div>
           )}
         </div>

@@ -16,33 +16,33 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Header */}
-      <div className="snap-start">
+      <div className="">
         <Navbar />
       </div>
       {/* Hero */}
-      <section id="hero" className="snap-center">
+      <section id="hero" className="">
         <Hero />
       </section>
       {/* About */}
       <div className="flex flex-col lg:flex-row lg:mx-[20%] lg:items-center lg:justify-between lg:translate-y-6 gap-14">
-        <section id="about" className="snap-center lg:order-last lg:w-[50%]">
+        <section id="about" className="lg:order-last lg:w-[50%]">
           <About />
         </section>
-        <section id="skills" className="snap-center lg:w-[50%]">
+        <section id="skills" className=" lg:w-[50%]">
           <Skills />
         </section>
       </div>
 
       {/* Experience */}
-      {/* <section id="experience" className="snap-center">
+      <section id="experience" className="">
         <Experience />
-      </section> */}
+      </section>
       {/* Projects */}
-      <section id="projects" className="snap-center">
+      <section id="projects" className="">
         <Project />
       </section>
       {/* Contact Me */}
-      <section id="contact" className="snap-center">
+      <section id="contact" className="">
         <Contact />
       </section>
       {/* Footer */}
