@@ -3,9 +3,5 @@
 @tailwind utilities;
 
 @layer components {
-    .pas {
-        font-family: "Plaster", sans-serif;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-    }
+    
   }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [open, setopen] = useState(false);
@@ -9,7 +10,11 @@ const Navbar = () => {
       <nav className="">
         <div className="absolute right-0 z-50 ">
           {open ? (
-            <div className="w-screen z-50 bg-[#2C2E33] ">
+            <motion.div
+            initial={{ y: "-100%" }}
+            animate={{ y: "0%" }}
+            transition={{ duration: 0.5, type: "tween" }}
+            className="w-screen z-50 bg-[#2C2E33] ">
             <div
               onClick={() => {
                 setopen(!open);
@@ -65,7 +70,7 @@ const Navbar = () => {
                 </button>
               </li>
             </ul>
-            </div>
+            </motion.div>
           ) : (
             <div className="">
             <div
@@ -79,7 +84,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <div className="hidden lg:block pt-5 z-50 absolute">
+        <div className="hidden lg:block pt-4 z-50 absolute bg-[rgb(37,38,42)] ">
           <ul className="flex items-center gap-[2vw] pb-3 justify-end pr-10 font-rob pl-5 w-screen">
             <li className="hover:text-gray-400 pt-3 md:pt-0 lg:pt-0">
               <a href="#about">

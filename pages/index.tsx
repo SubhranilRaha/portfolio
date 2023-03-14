@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Project from "../components/Project";
 import Skills from "../components/Skills";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
 
       {/* Experience */}
       <section id="experience" className="">
-        <Experience />
+        {/* <Experience /> */}
       </section>
       {/* Projects */}
       <section id="projects" className="">
@@ -46,6 +47,7 @@ export default function Home() {
         <Contact />
       </section>
       {/* Footer */}
+      <Footer/>
     </div>
   );
 }

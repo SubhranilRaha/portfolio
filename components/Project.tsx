@@ -72,7 +72,7 @@ function Project({}: Props) {
             <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
 
             <Image
-              src={"/Pragmate.png"}
+              src={"/SubroTube.png"}
               alt=""
               width={500}
               height={500}
@@ -113,7 +113,7 @@ function Project({}: Props) {
             <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
 
             <Image
-              src={"/Pragmate.png"}
+              src={"/CryptoTracker.png"}
               alt=""
               width={500}
               height={500}
@@ -154,7 +154,7 @@ function Project({}: Props) {
             <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
 
             <Image
-              src={"/Pragmate.png"}
+              src={"/GDrive.png"}
               alt=""
               width={500}
               height={500}
