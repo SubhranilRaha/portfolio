@@ -12,6 +12,7 @@ function Project({}: Props) {
           Featured Projects
         </h1>
       </div>
+      <div className="lg:hidden md:hidden">
       {/* 1st Project */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
@@ -176,6 +177,22 @@ function Project({}: Props) {
           </div>
         </div>
       </motion.div>
+      </div>
+      {/* for large and medium screens */}
+      <div className="hidden lg:block md:block mx-64">
+        {/* project1 */}
+        <div className="flex relative">
+        <Image
+              src={"/GDrive.png"}
+              alt=""
+              width={600}
+              height={500}
+              className=""
+        />
+          <div className="absolute right-0 top-5 text-red-500 font-rob font-bold text-base">Blockchain Project</div>
+          <div className="absolute right-0 top-12 font-extrabold font-mono text-2xl">GDRIVE3.0</div>
+        </div>
+      </div>
     </div>
   );
 }
