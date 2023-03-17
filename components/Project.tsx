@@ -8,7 +8,7 @@ type Props = {};
 
 function Project({}: Props) {
   return (
-    <div className="relative h-full top-24">
+    <div className="relative h-screen top-24">
       <div className="flex flex-col ml-5 pt-10 py-4 justify-center items-center">
         <h1 className="text-gray-500 font-mono">Some Things I have built</h1>
         <h1 className="text-4xl font-mono font-extrabold mb-10">
@@ -182,14 +182,15 @@ function Project({}: Props) {
         </motion.div>
       </div>
       {/* for large and medium screens */}
-      <div className="hidden lg:block md:block lg:mx-64 md:mx-32 ">
+      <div className="hidden lg:block md:block ">
         {/* project1 */}
-        <div className="flex pb-10">
+        {/* <div className="flex justify-center">
+        <div className="pb-10 relative ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="relative m-4 group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer"
+            className="relative group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer"
           >
             <div className="group-hover:bg-black/50 w-full h-full z-20 absolute transition duration-300 flex justify-center items-center">
               <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
@@ -197,9 +198,9 @@ function Project({}: Props) {
             <Image
               src={"/SubroTube.png"}
               alt=""
-              width={550}
-              height={550}
-              className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm"
+              width={600}
+              height={600}
+              className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm "
             />
           </motion.div>
 
@@ -207,13 +208,13 @@ function Project({}: Props) {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="absolute lg:right-64 md:right-32 flex flex-col gap-3 text-right group-hover:translate-x-5 transition duration-300"
+            className="absolute right-0 top-0 flex flex-col gap-3 text-right  transition duration-300 max-w-[500px] min-w-[400px]"
           >
             <div className="text-red-500 font-rob font-bold text-base translate-y-2">
               FullStack Project
             </div>
-            <div className=" font-extrabold font-mono text-2xl">SubroTube</div>
-            <div className="w-[500px] p-8 bg-[#2C2E33] text-sm text-left rounded-xl text-gray-400 z-30">
+            <div className="font-extrabold font-mono text-2xl">SubroTube</div>
+            <div className="max-w-[600px] min-w-[450px] p-8 bg-[#2C2E33] text-sm text-left rounded-xl text-gray-400 z-30">
               SubroTube is a youtube clone. It is fullstack MERN application.
               The application has APIs and can perform basic CRUD functionality
               using MongoDB and Mongoose.It uses Firebase storage for storing
@@ -232,41 +233,15 @@ function Project({}: Props) {
             </div>
           </motion.div>
         </div>
-         {/* project2 */}
-         <div className="flex p-10">
-         <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className=" flex flex-col gap-3 text-left group-hover:translate-x-5 transition duration-300"
-          >
-            <div className="text-red-500 font-rob font-bold text-base translate-y-2">
-              FullStack Project
-            </div>
-            <div className=" font-extrabold font-mono text-2xl">SubroTube</div>
-            <div className="w-[500px] p-8 bg-[#2C2E33] text-sm text-left rounded-xl text-gray-400 z-30">
-              SubroTube is a youtube clone. It is fullstack MERN application.
-              The application has APIs and can perform basic CRUD functionality
-              using MongoDB and Mongoose.It uses Firebase storage for storing
-              large video files.
-            </div>
-            <div className="text-[12px] flex gap-4 font-bold start text-gray-300 pb-1">
-              <span className=""># JWT Auth</span>
-              <span className=""># Firebase</span>
-              <span className=""># MongoDB</span>
-              <span className=""># Mongoose</span>
-              <span className=""># ExpressJS</span>
-            </div>
-            <div className="flex justify-start gap-4 pr-4 text-2xl">
-              <FiGithub />
-              <HiOutlineExternalLink />
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute lg:right-64 md:right-32 m-4 group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer"
+        </div> */}
+
+        <div className="flex justify-center">
+        <motion.div 
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}className="w-[45%] absolute left-[15%]">
+        <div   
+            className="relative group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer"
           >
             <div className="group-hover:bg-black/50 w-full h-full z-20 absolute transition duration-300 flex justify-center items-center">
               <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
@@ -274,45 +249,24 @@ function Project({}: Props) {
             <Image
               src={"/SubroTube.png"}
               alt=""
-              width={550}
-              height={550}
+              width={600}
+              height={600}
               className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm"
             />
-          </motion.div>
-
-          
-        </div>
-         {/* project3 */}
-         <div className="flex py-10">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="relative m-4 group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer"
-          >
-            <div className="group-hover:bg-black/50 w-full h-full z-20 absolute transition duration-300 flex justify-center items-center">
-              <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
-            </div>
-            <Image
-              src={"/SubroTube.png"}
-              alt=""
-              width={550}
-              height={550}
-              className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm"
-            />
+          </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="absolute lg:right-64 md:right-32 flex flex-col gap-3 text-right group-hover:translate-x-5 transition duration-300"
+            className="absolute right-[18%] flex flex-col gap-3 text-right transition duration-30 w-[40%]"
           >
             <div className="text-red-500 font-rob font-bold text-base translate-y-2">
               FullStack Project
             </div>
-            <div className=" font-extrabold font-mono text-2xl">SubroTube</div>
-            <div className="w-[500px] p-8 bg-[#2C2E33] text-sm text-left rounded-xl text-gray-400 z-30">
+            <div className="font-extrabold font-mono text-2xl">SubroTube</div>
+            <div className="text-sm p-6 bg-[#2C2E33] text-left rounded-xl text-gray-400 z-30 max-w-[500px] min-w-[400px] ">
               SubroTube is a youtube clone. It is fullstack MERN application.
               The application has APIs and can perform basic CRUD functionality
               using MongoDB and Mongoose.It uses Firebase storage for storing
@@ -331,56 +285,8 @@ function Project({}: Props) {
             </div>
           </motion.div>
         </div>
-        {/* project2 */}
-        <div className="flex p-10">
-         <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className=" flex flex-col gap-3 text-left group-hover:translate-x-5 transition duration-300"
-          >
-            <div className="text-red-500 font-rob font-bold text-base translate-y-2">
-              FullStack Project
-            </div>
-            <div className=" font-extrabold font-mono text-2xl">SubroTube</div>
-            <div className="w-[500px] p-8 bg-[#2C2E33] text-sm text-left rounded-xl text-gray-400 z-30">
-              SubroTube is a youtube clone. It is fullstack MERN application.
-              The application has APIs and can perform basic CRUD functionality
-              using MongoDB and Mongoose.It uses Firebase storage for storing
-              large video files.
-            </div>
-            <div className="text-[12px] flex gap-4 font-bold start text-gray-300 pb-1">
-              <span className=""># JWT Auth</span>
-              <span className=""># Firebase</span>
-              <span className=""># MongoDB</span>
-              <span className=""># Mongoose</span>
-              <span className=""># ExpressJS</span>
-            </div>
-            <div className="flex justify-start gap-4 pr-4 text-2xl">
-              <FiGithub />
-              <HiOutlineExternalLink />
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute lg:right-64 md:right-32 m-4 group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer"
-          >
-            <div className="group-hover:bg-black/50 w-full h-full z-20 absolute transition duration-300 flex justify-center items-center">
-              <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
-            </div>
-            <Image
-              src={"/SubroTube.png"}
-              alt=""
-              width={550}
-              height={550}
-              className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm"
-            />
-          </motion.div>
 
-          
-        </div>
+
       </div>
     </div>
   );
