@@ -9,13 +9,18 @@ type Props = {};
 function Project({}: Props) {
   return (
     <div className="relative h-full top-12 mb-32">
-      <div className="flex flex-col ml-5 py-4 justify-center items-center">
+      <motion.div
+      initial={{y:50,opacity:0}}
+      whileInView={{y:0,opacity:1}}
+      transition={{duration:1,delay:0}}
+      viewport={{once:true}}
+      className="flex flex-col ml-5 py-4 justify-center items-center">
         <h1 className="text-gray-500 font-mono">Some Things I have built</h1>
         <h1 className="text-4xl font-mono font-extrabold mb-10">
           Featured Projects
         </h1>
-      </div>
-      <div className="lg:hidden md:hidden flex flex-col gap-32">
+      </motion.div>
+      <div className="lg:hidden md:hidden flex flex-col gap-36">
         {/* smaller screen */}
       
         {/* 1st Project s*/}
@@ -24,7 +29,7 @@ function Project({}: Props) {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{once:true}}
-          className="flex flex-col justify-center items-center w-screen "
+          className="flex flex-col justify-center items-center w-screen h-[30vh]"
         >
           <div className="group max-w-[500px]">
             <div className="relative transition duration-300">
@@ -39,17 +44,27 @@ function Project({}: Props) {
                 height={500}
                 className="group-hover:scale-125 transition-all duration-500 "
               />
-              <div className="absolute left-12 top-14 transition-all duration-700 z-20">
+              <motion.div
+              initial={{y:50,opacity:0}}
+              whileInView={{y:0,opacity:1}}
+              transition={{duration:1,delay:.1}}
+              viewport={{once:true}}
+              className="absolute left-12 top-14 transition-all duration-700 z-20">
                 <span className="font-extrabold text-red-500 font-rob">
                   FullStack Project
                 </span>{" "}
-              </div>
-              <div className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
+              </motion.div>
+              <motion.div
+              initial={{y:50,opacity:0}}
+              whileInView={{y:0,opacity:1}}
+              transition={{duration:1,delay:.2}}
+              viewport={{once:true}}
+              className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
                 SubroTube
-              </div>
+              </motion.div>
             </div>
             <div className="relative flex justify-center ">
-              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-20 group-hover:-translate-y-16 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
+              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-16 group-hover:-translate-y-14 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
                 <div className="flex gap-2">
                   <span className="text-xs">#JWTAuth</span>
                   <span className="text-xs">#Firebase</span>
@@ -92,17 +107,27 @@ function Project({}: Props) {
                 height={500}
                 className="group-hover:scale-125 transition-all duration-500 "
               />
-              <div className="absolute left-12 top-14 transition-all duration-700 z-20">
+              <motion.div
+              initial={{y:50,opacity:0}}
+              whileInView={{y:0,opacity:1}}
+              transition={{duration:1,delay:.1}}
+              viewport={{once:true}}
+              className="absolute left-12 top-14 transition-all duration-700 z-20">
                 <span className="font-extrabold text-red-500 font-rob">
                   Group Project
                 </span>{" "}
-              </div>
-              <div className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
+              </motion.div>
+              <motion.div 
+              initial={{y:50,opacity:0}}
+              whileInView={{y:0,opacity:1}}
+              transition={{duration:1,delay:.2}}
+              viewport={{once:true}}
+              className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
                 Pragmate
-              </div>
+              </motion.div>
             </div>
             <div className="relative flex justify-center ">
-              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-20 group-hover:-translate-y-16 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
+              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-16 group-hover:-translate-y-14 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
                 <div className="flex gap-2">
                   <span className="text-xs">#JWTAuth</span>
                   <span className="text-xs">#Firebase</span>
@@ -145,17 +170,27 @@ function Project({}: Props) {
                 height={500}
                 className="group-hover:scale-125 transition-all duration-500 "
               />
-              <div className="absolute left-12 top-14 transition-all duration-700 z-20">
+              <motion.div 
+              initial={{y:50,opacity:0}}
+              whileInView={{y:0,opacity:1}}
+              transition={{duration:1,delay:.1}}
+              viewport={{once:true}}
+              className="absolute left-12 top-14 transition-all duration-700 z-20">
                 <span className="font-extrabold text-red-500 font-rob">
                   Frontend Project
                 </span>{" "}
-              </div>
-              <div className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
+              </motion.div>
+              <motion.div 
+              initial={{y:50,opacity:0}}
+              whileInView={{y:0,opacity:1}}
+              transition={{duration:1,delay:.2}}
+              viewport={{once:true}}
+              className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
                 CryptTracker
-              </div>
+              </motion.div>
             </div>
             <div className="relative flex justify-center ">
-              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-20 group-hover:-translate-y-16 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
+              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-16 group-hover:-translate-y-14 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
                 <div className="flex gap-2">
                   <span className="text-xs">#JWTAuth</span>
                   <span className="text-xs">#Firebase</span>
@@ -198,14 +233,24 @@ function Project({}: Props) {
                 height={500}
                 className="group-hover:scale-125 transition-all duration-500 "
               />
-              <div className="absolute left-12 top-14 transition-all duration-700 z-20">
+              <motion.div
+              initial={{y:50,opacity:0}}
+              whileInView={{y:0,opacity:1}}
+              transition={{duration:1,delay:.1}}
+              viewport={{once:true}}
+              className="absolute left-12 top-14 transition-all duration-700 z-20">
                 <span className="font-extrabold text-red-500 font-rob">
                   Web3 Project
                 </span>{" "}
-              </div>
-              <div className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
+              </motion.div>
+              <motion.div
+              initial={{y:50,opacity:0}}
+              whileInView={{y:0,opacity:1}}
+              transition={{duration:1,delay:.2}}
+              viewport={{once:true}}
+              className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
                 GoogleDrive 3.0
-              </div>
+              </motion.div>
             </div>
             <div className="relative flex justify-center ">
               <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-20 group-hover:-translate-y-16 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">

@@ -25,7 +25,7 @@ function Hero(props: any) {
             alt=""
             width={200}
             height={200}
-            className="w-[100%] rotate-45 -translate-y-32 md:-translate-y-16 lg:-translate-y-16 z-40"
+            className="w-[100%] rotate-45 -translate-y-24 md:-translate-y-16 lg:-translate-y-16 z-40"
           />
         </motion.div>
         <div className=" hover:scale-110 transition duration-500 group">

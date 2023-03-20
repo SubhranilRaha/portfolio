@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import contactJ from "../public/World.json";
+
 
 type Inputs = {
   name: string;
@@ -24,8 +26,15 @@ function Contact({}: Props) {
   };
 
   return (
-    <div className="pt-16 h-[600px] relative flex overflow-hidden flex-col lg:flex-row text-left md:flex-col max-w-full justify-evenly  items-center lg:translate-x-32 md:translate-x-16">
-      <div className="flex flex-col md:flex-row lg:flex-row space-y-2 lg:relative md:relative justify-center items-center">
+    <div
+    
+    className="pt-16 h-[600px] relative flex overflow-hidden flex-col lg:flex-row text-left md:flex-col max-w-full justify-evenly  items-center lg:translate-x-32 md:translate-x-16">
+      <motion.div
+      initial={{y:50,opacity:0}}
+      whileInView={{y:0,opacity:1}}
+      transition={{duration:1,delay:0}}
+      viewport={{once:true}}
+      className="flex flex-col md:flex-row lg:flex-row space-y-2 lg:relative md:relative justify-center items-center">
         <div className=" lg:flex lg:flex-col lg:gap-4 lg:justify-center lg:items-center">
           <h1 className="text-gray-500 lg:text-xl flex justify-center pb-4">
             Got Just What you Need?
@@ -85,7 +94,7 @@ function Contact({}: Props) {
           animationData={contactJ}
           loop={true}
         />
-      </div>
+      </motion.div>
      
     </div>
   );

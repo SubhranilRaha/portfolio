@@ -60,9 +60,9 @@ function  Navbar(props:any) {
                 initial={{ opacity: 0.5, y: -70 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2, delay: 1 }}
-                className="py-2 px-4 gap-2 border-[#e75151] rounded-[200px] text-[#e75151] flex items-center text-xl group" onClick={props.handfunc}
+                className="py-2 px-4 gap-2 border-[#e75151] rounded-[200px]  flex items-center text-xl group" onClick={props.handfunc}
               >
-                {props.mode==="light"?<><HiMoon className="group-active:animate-spin group-hover:animate-spin"/><h1>dark</h1></>:<><BsFillSunFill className="group-active:animate-spin group-hover:animate-spin"/><h1>light</h1></>}
+                {props.mode==="light"?<><HiMoon className="group-active:animate-spin group-hover:animate-spin text-[#e75151]"/><h1>dark</h1></>:<><BsFillSunFill className="group-active:animate-spin group-hover:animate-spin text-[#e75151]"/><h1>light</h1></>}
                 
               </motion.button>
             </motion.li>
