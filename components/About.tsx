@@ -3,9 +3,9 @@ import {MdArrowForward} from 'react-icons/md'
 function About() {
   return (
 
-    <div className="relative h-screen w-full flex flex-col justify-center p-5 md:p-20 lg:p-0 -translate-y-10 lg:translate-y-0">
+    <div className="relative h-full lg:h-screen w-full flex flex-col justify-center p-5 md:p-20 lg:p-0 -translate-y-10 lg:translate-y-0">
       <h1 className="text-[2.5rem] font-mono mt-20 ml-5">About Me</h1>
-      <div className="mx-5 my-6 flex flex-col gap-5 text-sm text-gray-300 ">
+      <div className="mx-5 my-6 flex flex-col gap-5 text-sm dark:text-gray-400 text-gray-600">
         <p>
           Hello, my name is Subhranil Raha, a BTECH Undergrad from Kolkata who
           likes building things for the web.

@@ -7,10 +7,30 @@ import Navbar from "../components/Navbar";
 import Project from "../components/Project";
 import Skills from "../components/Skills";
 import Footer from "../components/Footer";
+import { useEffect, useState } from "react";
+
 
 export default function Home() {
+  const [theme, setTheme] = useState("dark")
+
+  useEffect(() => {
+    if(theme==="dark"){
+      document.documentElement.classList.add("dark")
+    
+    }else{
+      document.documentElement.classList.remove("dark")
+   
+    }
+  }, [theme])
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark"?"light":"dark")
+    console.log(theme)
+  }
+  
+
   return (
-    <div className="bg-[rgb(37,38,42)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar-track-gray-400/0 scrollbar-thumb-red-400/80 scrollbar-thin scrollbar-thumb-rounded-full">
+    <div className="dark:bg-[rgb(37,38,42)]  dark:text-white bg-[#DCE4E6]  h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar-track-gray-400/0 scrollbar-thumb-red-400/80 scrollbar-thin scrollbar-thumb-rounded-full">
       <Head>
         <title>Subhranil Raha</title>
         <meta name="" content="" />
@@ -18,11 +38,15 @@ export default function Home() {
       </Head>
       {/* Header */}
       <div className="">
-        <Navbar />
+        <Navbar
+        mode={theme}
+        handfunc={handleThemeSwitch}
+        />
       </div>
       {/* Hero */}
       <section id="hero" className="">
-        <Hero />
+        <Hero mode={theme}
+        />
       </section>
       {/* About */}
       <div className="flex flex-col lg:flex-row lg:mx-[20%] lg:items-center lg:justify-between lg:translate-y-6 gap-14">
@@ -36,7 +60,7 @@ export default function Home() {
 
       {/* Experience */}
       <section id="experience" className="">
-        <Experience />
+        {/* <Experience /> */}
       </section>
       {/* Projects */}
       <section id="projects" className="">

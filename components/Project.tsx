@@ -8,285 +8,448 @@ type Props = {};
 
 function Project({}: Props) {
   return (
-    <div className="relative h-screen top-24">
-      <div className="flex flex-col ml-5 pt-10 py-4 justify-center items-center">
+    <div className="relative h-full top-12 mb-32">
+      <div className="flex flex-col ml-5 py-4 justify-center items-center">
         <h1 className="text-gray-500 font-mono">Some Things I have built</h1>
         <h1 className="text-4xl font-mono font-extrabold mb-10">
           Featured Projects
         </h1>
       </div>
-      <div className="lg:hidden md:hidden">
-        {/* 1st Project */}
+      <div className="lg:hidden md:hidden flex flex-col gap-32">
+        {/* smaller screen */}
+      
+        {/* 1st Project s*/}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="flex flex-col justify-center items-center w-screen mb-24 mt-5"
+          viewport={{once:true}}
+          className="flex flex-col justify-center items-center w-screen "
         >
           <div className="group max-w-[500px]">
-            <div className="relative group-hover:-translate-y-2 z-40 transition duration-300">
-              <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-500 absolute z-40 -top-3 right-3 inline-block px-2">
-                <span className="relative text-white text-2xl font-mono">
-                  Pragmate
-                </span>
-              </span>
+            <div className="relative transition duration-300">
             </div>
-            <div className=" relative overflow-hidden m-4">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
-
-              <Image
-                src={"/Pragmate.png"}
-                alt=""
-                width={500}
-                height={500}
-                className="group-hover:scale-125 transition-all duration-500  border-white border-2 p-1"
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-700 z-30 ">
-                <span className="font-extrabold ">Pragmate</span>{" "}
-              </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-1000 z-30 text-xl font-extrabold">
-                Group Project
-              </div>
-            </div>
-            <div className="relative flex justify-center ">
-              <div className="absolute  bg-[#2C2E33]p-4 rounded-xl -translate-y-10 mx-7 group-hover:-translate-y-8 z-40 transition duration-300 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis eos obcaecati atque aliquam ratione tempore
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-        {/* 2nd Project */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="flex flex-col justify-center items-center w-screen mb-24 mt-5"
-        >
-          <div className="group max-w-[500px]">
-            <div className="relative group-hover:-translate-y-2 z-40 transition duration-300">
-              <span className="before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-red-500 absolute z-40 -top-1 left-3 inline-block px-2">
-                <span className="relative text-white text-xl font-mono">
-                  Youtube Clone
-                </span>
-              </span>
-            </div>
-            <div className=" relative overflow-hidden m-4">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
+            <div className="relative overflow-hidden mx-4 rounded-lg">
+              <div className="bg-black/70 w-full h-full absolute z-10 transition-all duration-300 rounded-lg"></div>
 
               <Image
                 src={"/SubroTube.png"}
                 alt=""
                 width={500}
                 height={500}
-                className="group-hover:scale-125 transition-all duration-500  border-white border-2 p-1"
+                className="group-hover:scale-125 transition-all duration-500 "
               />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-700 z-30 ">
-                <span className="font-extrabold ">Pragmate</span>{" "}
+              <div className="absolute left-12 top-14 transition-all duration-700 z-20">
+                <span className="font-extrabold text-red-500 font-rob">
+                  FullStack Project
+                </span>{" "}
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-1000 z-30 text-xl font-extrabold">
-                Group Project
+              <div className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
+                SubroTube
               </div>
             </div>
             <div className="relative flex justify-center ">
-              <div className="absolute bg-[#2C2E33] p-4 rounded-xl -translate-y-10 mx-7 group-hover:-translate-y-8 z-40 transition duration-300 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis eos obcaecati atque aliquam ratione tempore
-                <div></div>
+              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-20 group-hover:-translate-y-16 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
+                <div className="flex gap-2">
+                  <span className="text-xs">#JWTAuth</span>
+                  <span className="text-xs">#Firebase</span>
+                  <span className="text-xs">#MongoDB</span>
+                  <span className="text-xs">#Mongoose</span>
+                  <span className="text-xs">#ExpressJS</span>
+                </div>
+                <div className="text-slate-500 pt-3">
+                  SubroTube is a youtube clone. It is fullstack MERN
+                  application. The application has APIs and can perform basic
+                  CRUD functionality using MongoDB and Mongoose. It uses
+                  Firebase storage for storing large video files.
+                </div>
+                <div className="flex justify-start gap-4 text-xl pt-3">
+                  <FiGithub />
+                  <HiOutlineExternalLink />
+                </div>
               </div>
             </div>
           </div>
         </motion.div>
-        {/* 3rd Project */}
+        {/* 2nd Project s */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="flex flex-col justify-center items-center w-screen mb-24 mt-5"
+          viewport={{once:true}}
+          className="flex flex-col justify-center items-center w-screen "
         >
           <div className="group max-w-[500px]">
-            <div className="relative group-hover:-translate-y-2 z-40 transition duration-300">
-              <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-500 absolute z-40 -top-2 right-3 inline-block px-2">
-                <span className="relative text-white text-xl font-mono">
-                  CryptoTracker
-                </span>
-              </span>
+            <div className="relative transition duration-300"> 
             </div>
-            <div className=" relative overflow-hidden m-4">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
+            <div className="relative overflow-hidden mx-4 rounded-lg">
+              <div className="bg-black/80 w-full h-full absolute z-10 transition-all duration-300 rounded-lg"></div>
+
+              <Image
+                src={"/Pragmate.png"}
+                alt=""
+                width={500}
+                height={500}
+                className="group-hover:scale-125 transition-all duration-500 "
+              />
+              <div className="absolute left-12 top-14 transition-all duration-700 z-20">
+                <span className="font-extrabold text-red-500 font-rob">
+                  Group Project
+                </span>{" "}
+              </div>
+              <div className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
+                Pragmate
+              </div>
+            </div>
+            <div className="relative flex justify-center ">
+              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-20 group-hover:-translate-y-16 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
+                <div className="flex gap-2">
+                  <span className="text-xs">#JWTAuth</span>
+                  <span className="text-xs">#Firebase</span>
+                  <span className="text-xs">#MongoDB</span>
+                  <span className="text-xs">#Mongoose</span>
+                  <span className="text-xs">#ExpressJS</span>
+                </div>
+                <div className="text-slate-500 pt-3">
+                  SubroTube is a youtube clone. It is fullstack MERN
+                  application. The application has APIs and can perform basic
+                  CRUD functionality using MongoDB and Mongoose. It uses
+                  Firebase storage for storing large video files.
+                </div>
+                <div className="flex justify-start gap-4 text-xl pt-3">
+                  <FiGithub />
+                  <HiOutlineExternalLink />
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+        {/* 3rd Project s */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{once:true}}
+          className="flex flex-col justify-center items-center w-screen "
+        >
+          <div className="group max-w-[500px]">
+            <div className="relative transition duration-300">
+            </div>
+            <div className="relative overflow-hidden mx-4 rounded-lg">
+              <div className="bg-black/60 w-full h-full absolute z-10 transition-all duration-300 rounded-xl"></div>
 
               <Image
                 src={"/CryptoTracker.png"}
                 alt=""
                 width={500}
                 height={500}
-                className="group-hover:scale-125 transition-all duration-500  border-white border-2 p-1"
+                className="group-hover:scale-125 transition-all duration-500 "
               />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-700 z-30 ">
-                <span className="font-extrabold ">Pragmate</span>{" "}
+              <div className="absolute left-12 top-14 transition-all duration-700 z-20">
+                <span className="font-extrabold text-red-500 font-rob">
+                  Frontend Project
+                </span>{" "}
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-1000 z-30 text-xl font-extrabold">
-                Group Project
+              <div className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
+                CryptTracker
               </div>
             </div>
             <div className="relative flex justify-center ">
-              <div className="absolute bg-[#2C2E33] p-4 rounded-xl -translate-y-10 mx-7 group-hover:-translate-y-8 z-40 transition duration-300 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis eos obcaecati atque aliquam ratione tempore
-                <div></div>
+              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-20 group-hover:-translate-y-16 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
+                <div className="flex gap-2">
+                  <span className="text-xs">#JWTAuth</span>
+                  <span className="text-xs">#Firebase</span>
+                  <span className="text-xs">#MongoDB</span>
+                  <span className="text-xs">#Mongoose</span>
+                  <span className="text-xs">#ExpressJS</span>
+                </div>
+                <div className="text-slate-500 pt-3">
+                  SubroTube is a youtube clone. It is fullstack MERN
+                  application. The application has APIs and can perform basic
+                  CRUD functionality using MongoDB and Mongoose. It uses
+                  Firebase storage for storing large video files.
+                </div>
+                <div className="flex justify-start gap-4 text-xl pt-3">
+                  <FiGithub />
+                  <HiOutlineExternalLink />
+                </div>
               </div>
             </div>
           </div>
         </motion.div>
-        {/* 4th Project */}
+        {/* 4th Project s */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="flex flex-col justify-center items-center w-screen mb-24 mt-5"
+          viewport={{once:true}}
+          className="flex flex-col justify-center items-center w-screen "
         >
           <div className="group max-w-[500px]">
-            <div className="relative group-hover:-translate-y-2 z-40 transition duration-300">
-              <span className="before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-red-500 absolute z-40 -top-2 left-3 inline-block px-2">
-                <span className="relative text-white text-2xl font-mono">
-                  GDrive3.0
-                </span>
-              </span>
+            <div className="relative transition duration-300">
             </div>
-            <div className=" relative overflow-hidden m-4">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
+            <div className="relative overflow-hidden mx-4 rounded-lg">
+              <div className="bg-black/80 w-full h-full absolute z-10 transition-all duration-300 "></div>
 
               <Image
                 src={"/GDrive.png"}
                 alt=""
                 width={500}
                 height={500}
-                className="group-hover:scale-125 transition-all duration-500  border-white border-2 p-1"
+                className="group-hover:scale-125 transition-all duration-500 "
               />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-700 z-30 ">
-                <span className="font-extrabold ">Pragmate</span>{" "}
+              <div className="absolute left-12 top-14 transition-all duration-700 z-20">
+                <span className="font-extrabold text-red-500 font-rob">
+                  Web3 Project
+                </span>{" "}
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-1000 z-30 text-xl font-extrabold">
-                Group Project
+              <div className="absolute  left-12 top-20 transition-all duration-1000 z-20 text-xl font-extrabold text-white">
+                GoogleDrive 3.0
               </div>
             </div>
             <div className="relative flex justify-center ">
-              <div className="absolute bg-[#2C2E33] p-4 rounded-xl -translate-y-10 mx-7 group-hover:-translate-y-8 z-40 transition duration-300 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis eos obcaecati atque aliquam ratione tempore
-                <div></div>
+              <div className="absolute bg-slate-300  dark:bg-[#2C2E33]  p-4 rounded-xl -translate-y-20 group-hover:-translate-y-16 mx-7 z-20 transition duration-300 text-sm text-slate-600 dark:text-slate-400">
+                <div className="flex gap-2">
+                  <span className="text-xs">#JWTAuth</span>
+                  <span className="text-xs">#Firebase</span>
+                  <span className="text-xs">#MongoDB</span>
+                  <span className="text-xs">#Mongoose</span>
+                  <span className="text-xs">#ExpressJS</span>
+                </div>
+                <div className="text-slate-500 pt-3">
+                  SubroTube is a youtube clone. It is fullstack MERN
+                  application. The application has APIs and can perform basic
+                  CRUD functionality using MongoDB and Mongoose. It uses
+                  Firebase storage for storing large video files.
+                </div>
+                <div className="flex justify-start gap-4 text-xl pt-3">
+                  <FiGithub />
+                  <HiOutlineExternalLink />
+                </div>
               </div>
             </div>
           </div>
         </motion.div>
       </div>
+
       {/* for large and medium screens */}
-      <div className="hidden lg:block md:block ">
-        {/* project1 */}
-        {/* <div className="flex justify-center">
-        <div className="pb-10 relative ">
+      <div className="hidden lg:flex lg:flex-col md:flex md:flex-col lg:gap-10 md:gap-20">
+        {/* 1st project */}
+        <div className="relative flex items-center justify-between lg:mx-[12vw] md:mx-[5vw] h-[23vw]">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="relative group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer"
+            transition={{ duration: 1, type: "tween" }}
+            viewport={{ once: true }}
+            className=""
           >
-            <div className="group-hover:bg-black/50 w-full h-full z-20 absolute transition duration-300 flex justify-center items-center">
-              <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
+            <div className="relative group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer">
+              <div className="group-hover:bg-black/50 w-full h-full z-10 absolute transition duration-300 flex justify-center items-center">
+                <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
+              </div>
+              <Image
+                src={"/SubroTube.png"}
+                alt=""
+                width={600}
+                height={600}
+                className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm lg:w-[43vw] md:w-[52vw]"
+              />
             </div>
-            <Image
-              src={"/SubroTube.png"}
-              alt=""
-              width={600}
-              height={600}
-              className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm "
-            />
           </motion.div>
-
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute right-0 top-0 flex flex-col gap-3 text-right  transition duration-300 max-w-[500px] min-w-[400px]"
+            transition={{ duration: 1, type: "linear" }}
+            viewport={{ once: true }}
+            className="z-30 flex flex-col gap-[1vw] text-right transition duration-30 absolute right-0 top-0 lg:w-[35vw] md:w-[43vw]"
           >
-            <div className="text-red-500 font-rob font-bold text-base translate-y-2">
+            <div className="text-red-500 font-rob font-bold text-base translate-y-2 z-40 text-[1.2vw]">
               FullStack Project
             </div>
-            <div className="font-extrabold font-mono text-2xl">SubroTube</div>
-            <div className="max-w-[600px] min-w-[450px] p-8 bg-[#2C2E33] text-sm text-left rounded-xl text-gray-400 z-30">
+            <div className="font-extrabold font-mono text-[1.5vw]">
+              SubroTube
+            </div>
+            <div className="p-6 dark:text-gray-400 text-gray-700  bg-gray-300 dark:bg-[#2C2E33] text-left rounded-xl z-30 text-[1vw]">
               SubroTube is a youtube clone. It is fullstack MERN application.
               The application has APIs and can perform basic CRUD functionality
-              using MongoDB and Mongoose.It uses Firebase storage for storing
+              using MongoDB and Mongoose. It uses Firebase storage for storing
               large video files.
             </div>
-            <div className="text-[12px] flex gap-4 font-bold justify-end text-gray-300 pb-1">
+            <div className="flex gap-4 font-bold justify-end dark:text-gray-300 text-gray-400 z-30 text-[0.8vw]">
               <span className=""># JWT Auth</span>
               <span className=""># Firebase</span>
               <span className=""># MongoDB</span>
               <span className=""># Mongoose</span>
               <span className=""># ExpressJS</span>
             </div>
-            <div className="flex justify-end gap-4 pr-4 text-2xl">
+            <div className="flex justify-end gap-4 text-[1.5vw]">
               <FiGithub />
               <HiOutlineExternalLink />
             </div>
           </motion.div>
         </div>
-        </div> */}
-
-        <div className="flex justify-center">
-        <motion.div 
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}className="w-[45%] absolute left-[15%]">
-        <div   
-            className="relative group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer"
-          >
-            <div className="group-hover:bg-black/50 w-full h-full z-20 absolute transition duration-300 flex justify-center items-center">
-              <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
-            </div>
-            <Image
-              src={"/SubroTube.png"}
-              alt=""
-              width={600}
-              height={600}
-              className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm"
-            />
-          </div>
-          </motion.div>
-
+        {/* 2nd project */}
+        <div className="relative flex items-center justify-between lg:mx-[12vw] md:mx-[5vw] h-[23vw]">
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute right-[18%] flex flex-col gap-3 text-right transition duration-30 w-[40%]"
+            transition={{ duration: 1, type: "linear" }}
+            viewport={{ once: true }}
+            className="z-30 flex flex-col gap-[1vw] text-left transition duration-30 absolute top-0 lg:w-[35vw] md:w-[43vw]"
           >
-            <div className="text-red-500 font-rob font-bold text-base translate-y-2">
-              FullStack Project
+            <div className="text-red-500 font-rob font-bold text-base translate-y-2 z-40 text-[1.2vw]">
+              Frontend Project
             </div>
-            <div className="font-extrabold font-mono text-2xl">SubroTube</div>
-            <div className="text-sm p-6 bg-[#2C2E33] text-left rounded-xl text-gray-400 z-30 max-w-[500px] min-w-[400px] ">
+            <div className="font-extrabold font-mono text-[1.5vw] z-30">
+              CryptoTracker
+            </div>
+            <div className="p-6 dark:text-gray-400 text-gray-700  bg-gray-300 dark:bg-[#2C2E33] text-left rounded-xl  z-30 text-[1vw]">
               SubroTube is a youtube clone. It is fullstack MERN application.
               The application has APIs and can perform basic CRUD functionality
-              using MongoDB and Mongoose.It uses Firebase storage for storing
+              using MongoDB and Mongoose. It uses Firebase storage for storing
               large video files.
             </div>
-            <div className="text-[12px] flex gap-4 font-bold justify-end text-gray-300 pb-1">
+            <div className="flex gap-4 font-bold justify-start dark:text-gray-300 text-gray-400 z-30 text-[0.8vw]">
               <span className=""># JWT Auth</span>
               <span className=""># Firebase</span>
               <span className=""># MongoDB</span>
               <span className=""># Mongoose</span>
               <span className=""># ExpressJS</span>
             </div>
-            <div className="flex justify-end gap-4 pr-4 text-2xl">
+            <div className="flex justify-start gap-4 text-[1.5vw]">
+              <FiGithub />
+              <HiOutlineExternalLink />
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, type: "linear" }}
+            viewport={{ once: true }}
+            className="z-10 absolute top-0 right-0"
+          >
+            <div className="group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer">
+              <div className="rounded-xl group-hover:bg-black/50 w-full h-full z-20 absolute top-0 right-0 transition duration-300 flex justify-center items-center">
+                <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
+              </div>
+              <Image
+                src={"/Pragmate.png"}
+                alt=""
+                width={600}
+                height={600}
+                className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm lg:w-[43vw] md:w-[52vw] scale-105"
+              />
+            </div>
+          </motion.div>
+        </div>
+        {/* 3rd project */}
+        <div className="relative flex items-center justify-between lg:mx-[12vw] md:mx-[5vw] h-[23vw]">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, type: "linear" }}
+            viewport={{ once: true }}
+            className="z-10"
+          >
+            <div className="relative group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer">
+              <div className="group-hover:bg-black/50 w-full h-full z-20 absolute transition duration-300 flex justify-center items-center">
+                <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
+              </div>
+              <Image
+                src={"/CryptoTracker.png"}
+                alt=""
+                width={600}
+                height={600}
+                className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm lg:w-[43vw] md:w-[52vw]"
+              />
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, type: "linear" }}
+            viewport={{ once: true }}
+            className="z-30 flex flex-col gap-[1vw] text-right transition duration-30 absolute right-0 top-0 lg:w-[35vw] md:w-[43vw]"
+          >
+            <div className="text-red-500 font-rob font-bold text-base translate-y-2 z-40 text-[1.2vw]">
+              FullStack Project
+            </div>
+            <div className="font-extrabold font-mono text-[1.5vw]">
+              SubroTube
+            </div>
+            <div className="p-6 dark:text-gray-400 text-gray-700  bg-gray-300 dark:bg-[#2C2E33] text-left rounded-xl z-30 text-[1vw]">
+              SubroTube is a youtube clone. It is fullstack MERN application.
+              The application has APIs and can perform basic CRUD functionality
+              using MongoDB and Mongoose. It uses Firebase storage for storing
+              large video files.
+            </div>
+            <div className="flex gap-4 font-bold justify-end dark:text-gray-300 text-gray-400 z-30 text-[0.8vw]">
+              <span className=""># JWT Auth</span>
+              <span className=""># Firebase</span>
+              <span className=""># MongoDB</span>
+              <span className=""># Mongoose</span>
+              <span className=""># ExpressJS</span>
+            </div>
+            <div className="flex justify-end gap-4 text-[1.5vw]">
               <FiGithub />
               <HiOutlineExternalLink />
             </div>
           </motion.div>
         </div>
-
-
+        {/* 4th project */}
+        <div className="relative flex items-center justify-between lg:mx-[12vw] md:mx-[5vw] h-[23vw]">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, type: "linear" }}
+            viewport={{ once: true }}
+            className="z-30 flex flex-col gap-[1vw] text-left transition duration-30 absolute top-0 lg:w-[35vw] md:w-[43vw]"
+          >
+            <div className="text-red-500 font-rob font-bold text-base translate-y-2 z-30 text-[1.2vw]">
+              Frontend Project
+            </div>
+            <div className="font-extrabold font-mono text-[1.5vw] z-30">
+              CryptoTracker
+            </div>
+            <div className="p-6 dark:text-gray-400 text-gray-700  bg-gray-300 dark:bg-[#2C2E33] text-left rounded-xl  z-30 text-[1vw]">
+              SubroTube is a youtube clone. It is fullstack MERN application.
+              The application has APIs and can perform basic CRUD functionality
+              using MongoDB and Mongoose. It uses Firebase storage for storing
+              large video files.
+            </div>
+            <div className="flex gap-4 font-bold justify-start dark:text-gray-300 text-gray-400 z-30 text-[0.8vw]">
+              <span className=""># JWT Auth</span>
+              <span className=""># Firebase</span>
+              <span className=""># MongoDB</span>
+              <span className=""># Mongoose</span>
+              <span className=""># ExpressJS</span>
+            </div>
+            <div className="flex justify-start gap-4 text-[1.5vw]">
+              <FiGithub />
+              <HiOutlineExternalLink />
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, type: "linear" }}
+            viewport={{ once: true }}
+            className="z-10 absolute top-0 right-0"
+          >
+            <div className="group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer">
+              <div className="rounded-xl group-hover:bg-black/50 w-full h-full z-20 absolute top-0 right-0 transition duration-300 flex justify-center items-center">
+                <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
+              </div>
+              <Image
+                src={"/GDrive.png"}
+                alt=""
+                width={500}
+                height={500}
+                className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm lg:w-[43vw] md:w-[52vw]"
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -24,17 +24,17 @@ function Contact({}: Props) {
   };
 
   return (
-    <div className="h-[600px] relative flex overflow-hidden flex-col lg:flex-row text-left md:flex-row max-w-full justify-evenly  items-center lg:translate-x-32">
-      <div className="flex flex-col lg:flex-row space-y-2 lg:relative md:relative justify-center items-center">
-        <div className="lg:flex lg:flex-col lg:gap-4 lg:justify-center lg:items-center">
+    <div className="pt-16 h-[600px] relative flex overflow-hidden flex-col lg:flex-row text-left md:flex-col max-w-full justify-evenly  items-center lg:translate-x-32 md:translate-x-16">
+      <div className="flex flex-col md:flex-row lg:flex-row space-y-2 lg:relative md:relative justify-center items-center">
+        <div className=" lg:flex lg:flex-col lg:gap-4 lg:justify-center lg:items-center">
           <h1 className="text-gray-500 lg:text-xl flex justify-center pb-4">
             Got Just What you Need?
           </h1>
 
-          <h1 className="relative text-4xl font-semibold text-center lg:text-6xl">
+          <h1 className="pb-5 relative text-4xl font-semibold text-center lg:text-6xl">
             Get In Touch!
           </h1>
-          <div className="font-rob w-96 text-center pt-2 text-gray-300">
+          <div className="pb-5 font-rob w-96 text-center pt-2 dark:text-gray-300 text-gray-600">
             If you are looking for a skilled web and blockchain developer to
             take your project to the next level, I would be honored to work with
             you.
@@ -67,13 +67,13 @@ function Contact({}: Props) {
               className="contactinput"
             /> */}
               <Lottie
-                className="w-[300px] lg:hidden"
+                className="w-[300px] lg:hidden md:hidden"
                 animationData={contactJ}
                 loop={true}
               />
               <button
                 type="submit"
-                className="bg-red-500 py-3 px-10 rounded-lg w-[200px] font-bold text-lg hover:cursor-pointer mt-10"
+                className="bg-red-500 py-3 px-10 rounded-lg w-[200px] font-bold text-lg hover:cursor-pointer mt-10 text-white"
               >
                 Say Hello!
               </button>
@@ -81,7 +81,7 @@ function Contact({}: Props) {
           </form>
         </div>
         <Lottie
-          className="min-w-[600px] max-w-[800px] hidden lg:block"
+          className="min-w-[400px] max-w-[800px] hidden lg:block md:block md:-translate-x-10"
           animationData={contactJ}
           loop={true}
         />

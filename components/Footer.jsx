@@ -13,10 +13,10 @@ const Footer = () => {
         Subhranil<span className="text-[#e75151]">Raha</span>.
       </h1>
       <div className="flex min-w-[200px] max-w-[400px] justify-between">
-          <BsGithub className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
-          <BsInstagram className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400"/>
-          <FiTwitter className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
-          <FaLinkedin className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 text-gray-400" />
+          <BsGithub className="text-[25px] xl:text-[30px]  hover:cursor-pointer hover:scale-105 dark:text-gray-300 text-gray-600" />
+          <BsInstagram className="text-[25px] xl:text-[30px]  hover:cursor-pointer hover:scale-105 dark:text-gray-300 text-gray-600"/>
+          <FiTwitter className="text-[25px] xl:text-[30px] hover:cursor-pointer hover:scale-105 dark:text-gray-300 text-gray-600" />
+          <FaLinkedin className="text-[25px] xl:text-[30px]  hover:cursor-pointer hover:scale-105 dark:text-gray-300 text-gray-600" />
         </div>
         <div className="font-rob text-sm">Designed & Built by Subhranil Raha &#169; 2023</div>
     </div>
