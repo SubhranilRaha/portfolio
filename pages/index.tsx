@@ -34,8 +34,9 @@ export default function Home() {
       <Head>
         <title>Subhranil Raha</title>
         <meta name="" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
+      
       {/* Header */}
       <div className="">
         <Navbar

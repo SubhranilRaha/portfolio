@@ -36,10 +36,6 @@ function About() {
           the help of technologies such as solidity, hardhat, ethers and much
           more.
         </p>
-        <p>
-          If you are looking for a skilled web and blockchain developer to take your
-          project to the next level, I would be honored to work with you.
-        </p>
         <a className='lg:hidden' href="#skills">
         <motion.div
         initial={{y:50,opacity:0}}

@@ -21,13 +21,15 @@ const Skills = () => {
       className="mx-5 text-gray-400 lg:hidden">
         These are the things I am good at
       </motion.p>
-      <motion.div
-      initial={{y:50,opacity:0}}
-      whileInView={{y:0,opacity:1}}
-      transition={{duration:1,delay:0}}
-      viewport={{once:true}}
+      <div
       className="flex flex-col gap-5 h-[350px]  lg:w-full items-center justify-between mt-10 mx-5 lg:mx-0">
-        <div className="p-5 group border border-gray-600 dark:border-gray-200h-full w-full rounded-xl  hover:border-[#e75151] font-rob hover:translate-x-1 transition">
+        <motion.div 
+        initial={{y:50,opacity:0}}
+        whileInView={{y:0,opacity:1}}
+        transition={{duration:1,delay:0}}
+        viewport={{once:true}}
+        className="">
+          <div className="p-5 group border border-gray-600 dark:border-gray-200 h-full w-full rounded-xl   font-rob hover:translate-x-1 hover:dark:border-red-400 transition">
           <div className="flex flex-row justify-between">
             <div className="group-hover:text-[#e75151]">
               FrontEnd Development
@@ -39,33 +41,37 @@ const Skills = () => {
             This includes designing responsive UI for web and mobile
             applications.
           </div>
-        </div>
-        <motion.div
+          </div>
+        </motion.div>
+        <motion.div 
         initial={{y:50,opacity:0}}
         whileInView={{y:0,opacity:1}}
         transition={{duration:1,delay:.2}}
         viewport={{once:true}}
-        className="group border border-gray-600 dark:border-gray-200h-full w-full rounded-xl  hover:border-[#e75151] p-5 font-rob hover:translate-x-1 transition">
+        className="">
+          <div className="p-5 group border border-gray-600 dark:border-gray-200 h-full w-full rounded-xl   font-rob hover:translate-x-1 hover:dark:border-red-400 transition">
           <div className="flex flex-row justify-between">
             <div className="group-hover:text-[#e75151]">
-              BackEnd Development
+            BackEnd Development
             </div>
             <ImDatabase className="text-[#e75151] text-lg" />
           </div>
 
           <div className="dark:text-gray-400 text-gray-600 text-sm">
-            This includes working with API, database and authentication.
+          This includes working with API, database and authentication.
+          </div>
           </div>
         </motion.div>
-        <motion.div
+        <motion.div 
         initial={{y:50,opacity:0}}
         whileInView={{y:0,opacity:1}}
         transition={{duration:1,delay:.4}}
         viewport={{once:true}}
-        className="group border border-gray-600 dark:border-gray-200h-full w-full rounded-xl  hover:border-[#e75151] p-5 font-rob hover:translate-x-1 transition">
+        className="">
+          <div className="p-5 group border border-gray-600 dark:border-gray-200 h-full w-full rounded-xl   font-rob hover:translate-x-1 hover:dark:border-red-400 transition">
           <div className="flex flex-row justify-between">
             <div className="group-hover:text-[#e75151]">
-              Blockchain Development
+            Blockchain Development
             </div>
             <FaEthereum className="text-[#e75151] text-xl" />
           </div>
@@ -74,8 +80,10 @@ const Skills = () => {
             This include creating smart contracts and interacting with the
             blockchain.
           </div>
+          </div>
         </motion.div>
-      </motion.div>
+       
+      </div>
     </div>
   );
 };

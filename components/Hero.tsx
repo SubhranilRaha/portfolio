@@ -15,17 +15,17 @@ function Hero(props: any) {
     <>
       <div className="relative h-screen flex flex-col space-y-8 items-center justify-center text-center pt-32 translate-y-10 lg:translate-y-16">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 3.1 }}
-          className="absolute top-0 md:top-10 left-0 lg:w-[22vw] md:w-[28vw] w-[35vw] z-50"
+          initial={{ opacity: 0,x:-60,y:-40 }}
+          animate={{ opacity: 1,x:0,y:0 }}
+          transition={{ duration: 1, delay: 4 }}
+          className="absolute -left-28 -top-[9vw] "
         >
           <Image
-            src={"/headphone.png"}
+            src={"/astro.svg"}
             alt=""
             width={200}
             height={200}
-            className="w-[100%] rotate-45 -translate-y-24 md:-translate-y-16 lg:-translate-y-16 z-40"
+            className="w-[32vw] h-[32vw] md:hidden hidden lg:block xl:block rotate-[40deg]"
           />
         </motion.div>
         <div className=" hover:scale-110 transition duration-500 group">
@@ -95,14 +95,17 @@ function Hero(props: any) {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 2.6 }}
-          className="flex min-w-[250px] max-w-[300px] justify-between"
+          className="flex min-w-[250px] max-w-[300px] justify-between z-40"
         >
-          <BsGithub className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" />
-          <BsInstagram className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" />
-          <FiTwitter className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" />
-          <FaLinkedin className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" />
+          <a href="https://github.com/SubhranilRaha" target='_blank' rel="noreferrer" className=""><BsGithub   className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></a>
+          <a href="https://www.instagram.com/subhranil_raha/" target='_blank' rel="noreferrer" className=""><BsInstagram className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></a>
+          <a href="https://twitter.com/SubhranilRaha" target='_blank' rel="noreferrer" className=""><FiTwitter className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></a>
+          <a href="https://www.linkedin.com/in/subhranil-raha-8139981b3/" target='_blank' rel="noreferrer" className=""><FaLinkedin className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></a>
+          
+          
+          
+          
         </motion.div>
-        {/* <iframe title="myFrame" className="h-14 z-50" src="https://embed.lottiefiles.com/animation/96514"></iframe> */}
         <motion.a
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
