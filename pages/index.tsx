@@ -30,7 +30,7 @@ export default function Home() {
   
 
   return (
-    <div className="dark:bg-[rgb(37,38,42)]  dark:text-white bg-[#DCE4E6]  h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar-track-gray-400/0 scrollbar-thumb-red-400/80 scrollbar-thin scrollbar-thumb-rounded-full">
+    <div className="dark:bg-[rgb(37,38,42)]  dark:text-white bg-[#DCE4E6]  h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar-thumb-red-400/80 scrollbar-thin scrollbar-thumb-rounded-full ">
       <Head>
         <title>Subhranil Raha</title>
         <meta name="" content="" />

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useState } from "react";
 import { BsFillSunFill } from "react-icons/bs";
 import { HiMoon } from "react-icons/hi";
@@ -9,8 +10,8 @@ function Navbar(props: any) {
   return (
     <>
       <nav className="">
-        {/* larger and medium screen */}
-        <div className="hidden md:block lg:block pt-4 z-50 absolute -translate-x-2 backdrop-blur-sm">
+        {/* larger screen */}
+        <div className="hidden lg:block pt-4 z-50 absolute -translate-x-2 backdrop-blur-sm">
           <motion.ul className="flex items-center gap-[1.5vw] pb-3 justify-end pr-10 font-rob pl-5 w-screen">
             <motion.li
               initial={{ opacity: 0.5, y: -70 }}
@@ -75,6 +76,7 @@ function Navbar(props: any) {
               </motion.button>
             </motion.li>
             <motion.li>
+              <Link href="/subhranilrahacv.pdf" download="subhranilrahacv target='_blank'">
               <motion.button
                 initial={{ opacity: 0.5, y: -70 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -83,19 +85,16 @@ function Navbar(props: any) {
               >
                 Resume
               </motion.button>
+              </Link>
             </motion.li>
           </motion.ul>
         </div>
 
         {/* smaller screen */}
-        <div className="absolute flex w-full h-[50px] justify-between backdrop-blur-sm z-50  items-center px-3 pt-1 block lg:hidden md:hidden ">
-          <div className="">
-          <a href='#hero' className="text-3xl top-4 left-4">
-            Subhranil<span className="text-[#e75151]">Raha</span>.
-          </a>
-          </div>
+        <div className="absolute right-2 h-[50px] z-50  px-3 pt-1 block lg:hidden">
+          
           <div
-            className="md:hidden lg:hidden rounded-full flex flex-col justify-between p-4 right-3 top-2 hover:cursor-pointer group z-50 h-14 w-14"
+            className=" rounded-full flex flex-col justify-between p-4 right-3 top-2 hover:cursor-pointer group z-50 h-14 w-14"
             onClick={() => setopen(!open)}
           >
             <div
@@ -124,11 +123,15 @@ function Navbar(props: any) {
         <div
           className={
             open
-              ? "lg:hidden md:hidden absolute h-screen w-screen backdrop-blur-xl translate-x-0 transition-all duration-[1s] z-40"
-              : "absolute h-screen w-screen  -translate-x-[800px] backdrop-blur-xl transition-all duration-[1s] z-40 lg:hidden md:hidden"
+              ? " absolute h-screen w-screen backdrop-blur-xl translate-x-0 transition-all duration-[1s] z-40 lg:hidden"
+              : "absolute h-screen w-screen  -translate-x-[1000px] backdrop-blur-xl transition-all duration-[1s] z-40 lg:hidden"
           }
         >
+          
           <ul className="flex flex-col items-center justify-center gap-12  text-xl font-rob h-screen">
+          <a href='#hero' className="text-3xl top-4 left-4">
+            Subhranil<span className="text-[#e75151]">Raha</span>.
+          </a>
             <li className="hover:text-gray-400 pt-3 md:pt-0 lg:pt-0">
               <a
                 onClick={() => {

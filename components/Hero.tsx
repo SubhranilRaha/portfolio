@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import Image from "next/image";
+import Link from "next/link";
 import { BsGithub, BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
@@ -18,14 +19,14 @@ function Hero(props: any) {
           initial={{ opacity: 0,x:-60,y:-40 }}
           animate={{ opacity: 1,x:0,y:0 }}
           transition={{ duration: 1, delay: 4 }}
-          className="absolute -left-28 -top-[9vw] "
+          className="absolute -left-28 lg:-top-[9vw] -top-20 z-50"
         >
           <Image
             src={"/astro.svg"}
             alt=""
             width={200}
             height={200}
-            className="w-[32vw] h-[32vw] md:hidden hidden lg:block xl:block rotate-[40deg]"
+            className="lg:w-[32vw] lg:h-[32vw] w-[350px] rotate-[40deg]"
           />
         </motion.div>
         <div className=" hover:scale-110 transition duration-500 group">
@@ -97,10 +98,10 @@ function Hero(props: any) {
           transition={{ duration: 0.4, delay: 2.6 }}
           className="flex min-w-[250px] max-w-[300px] justify-between z-40"
         >
-          <a href="https://github.com/SubhranilRaha" target='_blank' rel="noreferrer" className=""><BsGithub   className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></a>
-          <a href="https://www.instagram.com/subhranil_raha/" target='_blank' rel="noreferrer" className=""><BsInstagram className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></a>
-          <a href="https://twitter.com/SubhranilRaha" target='_blank' rel="noreferrer" className=""><FiTwitter className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></a>
-          <a href="https://www.linkedin.com/in/subhranil-raha-8139981b3/" target='_blank' rel="noreferrer" className=""><FaLinkedin className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></a>
+          <Link href="https://github.com/SubhranilRaha" target='_blank' rel="noreferrer" className=""><BsGithub   className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></Link>
+          <Link href="https://www.instagram.com/subhranil_raha/" target='_blank' rel="noreferrer" className=""><BsInstagram className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></Link>
+          <Link href="https://twitter.com/SubhranilRaha" target='_blank' rel="noreferrer" className=""><FiTwitter className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></Link>
+          <Link href="https://www.linkedin.com/in/subhranil-raha-8139981b3/" target='_blank' rel="noreferrer" className=""><FaLinkedin className="text-[25px] xl:text-[30px] z-40 hover:cursor-pointer hover:scale-105 dark:text-gray-400 text-gray-600" /></Link>
           
           
           
