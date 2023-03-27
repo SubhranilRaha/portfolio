@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { SlSocialLinkedin } from "react-icons/sl";
+
 
 type Props = {};
 
@@ -80,11 +82,11 @@ function Project({}: Props) {
                 SubroTube is a full-stack MERN application that functions as a YouTube clone. Users can sign in to their account using their Google credentials and browse through a variety of videos, as well as upload their own. Once logged in, users can interact with content by liking videos and subscribing to channels. All data is securely stored in MongoDB and Firebase, ensuring data safety and security for all users.
                 </div>
                 <div className="flex justify-start gap-4 text-xl pt-3">
-                  <a className="hover:scale-110 hover:text-red-400" href="https://github.com/SubhranilRaha/subrotube">
+                  <Link className="hover:scale-110 hover:text-red-400" href="https://github.com/SubhranilRaha/subrotube">
                   <FiGithub />
-                  </a>
-                  <a className="hover:scale-110 hover:text-red-400" href="https://subrotube.netlify.app">
-                  <HiOutlineExternalLink /></a>
+                  </Link>
+                  <Link className="hover:scale-110 hover:text-red-400" href="https://subrotube.netlify.app">
+                  <HiOutlineExternalLink /></Link>
                 </div>
               </div>
             </div>
@@ -146,12 +148,12 @@ function Project({}: Props) {
                   My team, developed a full-stack project for the final round of Smart India Hackathon 2022. As a member, I was responsible for the frontend development, UI/UX design, and overall architecture of the web app. Our goal was to create a platform that can assist teachers in their work. The application collects and records data about students and utilizes an AI model to predict their future outcomes. The collected data is presented to the user through visually appealing charts, which enhances the user experience.
                 </div>
                 <div className="flex justify-start gap-4 text-xl pt-3">
-                <a className="flex justify-center items-center" href="https://github.com/SubhranilRaha/PragmateSIH">
+                <Link className="flex justify-center items-center" href="https://github.com/SubhranilRaha/PragmateSIH">
                   <FiGithub />
-                  </a>
-                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:6972480779570352128/">
+                  </Link>
+                  <Link href="https://www.linkedin.com/feed/update/urn:li:activity:6972480779570352128/">
                   <SlSocialLinkedin />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -212,11 +214,11 @@ function Project({}: Props) {
                 </div>
                 <div className="flex justify-start gap-4 text-xl pt-3">
                   
-                  <a href="https://github.com/SubhranilRaha/crypto-tracker">
+                  <Link href="https://github.com/SubhranilRaha/crypto-tracker">
                   <FiGithub />
-                  </a>
-                  <a href="https://cryptrackr.netlify.app">
-                  <HiOutlineExternalLink /></a>
+                  </Link>
+                  <Link href="https://cryptrackr.netlify.app">
+                  <HiOutlineExternalLink /></Link>
                 </div>
               </div>
             </div>
@@ -277,11 +279,11 @@ function Project({}: Props) {
                 This is a Decentralized Application (Dapp) that utilizes the Pinata IPFS to securely store image file hashes on the blockchain. The application is compiled and deployed to the Sepolia test network with the help of Hardhat. The frontend of the application is written in React and interacts with the smart contract via EthersJS. To access the application, users must log in using their MetaMask account and can share their data with other addresses.
                 </div>
                 <div className="flex justify-start gap-4 text-xl pt-3">
-                <a href="https://github.com/SubhranilRaha/client">
+                <Link href="https://github.com/SubhranilRaha/client">
                   <FiGithub />
-                  </a>
-                  <a href="https://gdriveweb3.netlify.app">
-                  <HiOutlineExternalLink /></a>
+                  </Link>
+                  <Link href="https://gdriveweb3.netlify.app">
+                  <HiOutlineExternalLink /></Link>
                 </div>
               </div>
             </div>
@@ -300,7 +302,7 @@ function Project({}: Props) {
             viewport={{ once: true }}
             className=""
           >
-            <a className="hover:scale-110 hover:text-red-400" href="https://subrotube.netlify.app" target='_blank'>
+            <Link className="hover:scale-110 hover:text-red-400" href="https://subrotube.netlify.app" target='_blank' rel="noreferrer">
             <div className="relative group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer">
               <div className="group-hover:bg-black/50 w-full h-full z-10 absolute transition duration-300 flex justify-center items-center">
                 <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
@@ -313,7 +315,7 @@ function Project({}: Props) {
                 className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm lg:w-[43vw] md:w-[52vw]"
               />
             </div>
-            </a>
+            </Link>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 100 }}
@@ -340,11 +342,11 @@ function Project({}: Props) {
                   <span className="text-xs">#MaterialUI</span>
             </div>
             <div className="flex justify-end gap-4 text-[1.5vw]">
-            <a className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://github.com/SubhranilRaha/subrotube">
+            <Link className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://github.com/SubhranilRaha/subrotube">
                   <FiGithub />
-                  </a>
-                  <a className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://subrotube.netlify.app">
-                  <HiOutlineExternalLink /></a>
+                  </Link>
+                  <Link className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://subrotube.netlify.app">
+                  <HiOutlineExternalLink /></Link>
             </div>
           </motion.div>
         </div>
@@ -376,12 +378,12 @@ function Project({}: Props) {
                   <span className="text-xs">#Chatbot</span>
             </div>
             <div className="flex justify-start gap-4 text-[1.5vw]">
-            <a className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://github.com/SubhranilRaha/PragmateSIH">
+            <Link className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://github.com/SubhranilRaha/PragmateSIH">
                   <FiGithub />
-                  </a>
-                  <a className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://www.linkedin.com/feed/update/urn:li:activity:6972480779570352128/">
+                  </Link>
+                  <Link className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://www.linkedin.com/feed/update/urn:li:activity:6972480779570352128/">
                   <SlSocialLinkedin />
-                  </a>
+                  </Link>
             </div>
           </motion.div>
           <motion.div
@@ -391,7 +393,7 @@ function Project({}: Props) {
             viewport={{ once: true }}
             className="z-10 absolute top-0 right-0"
           >
-            <a href="https://github.com/SubhranilRaha/PragmateSIH"  rel="noreferrer" target='_blank' className="">
+            <Link href="https://github.com/SubhranilRaha/PragmateSIH"  rel="noreferrer" target='_blank' className="">
             <div className="group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer">
               <div className="rounded-xl group-hover:bg-black/50 w-full h-full z-20 absolute top-0 right-0 transition duration-300 flex justify-center items-center">
                 <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
@@ -404,7 +406,7 @@ function Project({}: Props) {
                 className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm lg:w-[43vw] md:w-[52vw] scale-105"
               />
             </div>
-            </a>
+            </Link>
           </motion.div>
         </div>
         {/* 3rd project */}
@@ -416,7 +418,7 @@ function Project({}: Props) {
             viewport={{ once: true }}
             className="z-10"
           >
-          <a href="https://cryptrackr.netlify.app" target='_blank' rel="noreferrer" className="">
+          <Link href="https://cryptrackr.netlify.app" target='_blank' rel="noreferrer" className="">
             <div className="relative group transition duration-300 overflow-hidden rounded-xl hover:cursor-pointer">
               <div className="group-hover:bg-black/50 w-full h-full z-20 absolute transition duration-300 flex justify-center items-center">
                 <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
@@ -429,7 +431,7 @@ function Project({}: Props) {
                 className="group-hover:scale-125 transition-all duration-500 hover:cursor-pointer group-hover:blur-sm lg:w-[43vw] md:w-[52vw]"
               />
             </div>
-            </a>
+            </Link>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 100 }}
@@ -456,11 +458,11 @@ function Project({}: Props) {
                   <span className="text-xs">#Crypto</span>
             </div>
             <div className="flex justify-end gap-4 text-[1.5vw]">
-            <a className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://github.com/SubhranilRaha/crypto-tracker">
+            <Link className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://github.com/SubhranilRaha/crypto-tracker">
                   <FiGithub />
-                  </a>
-                  <a className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://cryptrackr.netlify.app">
-                  <HiOutlineExternalLink /></a>
+                  </Link>
+                  <Link className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://cryptrackr.netlify.app">
+                  <HiOutlineExternalLink /></Link>
             </div>
           </motion.div>
         </div>
@@ -492,14 +494,14 @@ function Project({}: Props) {
                   <span className="text-xs">#NodeJS</span>
             </div>
             <div className="flex justify-start gap-4 text-[1.5vw]">
-            <a className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://github.com/SubhranilRaha/client">
+            <Link className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://github.com/SubhranilRaha/client">
                   <FiGithub />
-                  </a>
-                  <a className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://gdriveweb3.netlify.app">
-                  <HiOutlineExternalLink /></a>
+                  </Link>
+                  <Link className="hover:scale-110 hover:text-red-400" target='_blank' rel="noreferrer" href="https://gdriveweb3.netlify.app">
+                  <HiOutlineExternalLink /></Link>
             </div>
           </motion.div>
-          <a href="https://gdriveweb3.netlify.app" rel="noreferrer" target='_blank' className="">
+          <Link href="https://gdriveweb3.netlify.app" rel="noreferrer" target='_blank' className="">
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -520,7 +522,7 @@ function Project({}: Props) {
               />
             </div>
           </motion.div>
-              </a>
+              </Link>
         </div>
       </div>
     </div>
