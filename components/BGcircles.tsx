@@ -15,7 +15,7 @@ function BGcircles({}: Props) {
         <div className='absolute rodade border dark:border-[#333333] border-gray-400 rounded-full h-[250px] w-[250px] mt-52'>
         <div className='h-3 w-3 translate-x-[160px] border border-red-500 bg-[#DCE4E6] dark:bg-[#25262A]  rounded-full'/>
         </div>
-        <div className='absolute border border-[#e75151] h-[500px] w-[500px] mt-52 rounded-full robabe'>
+        <div className='absolute border border-[#e75151] h-[480px] w-[480px] mt-52 rounded-full robabe'>
         <div className='h-6 w-6 translate-x-[310px] bg-red-500  rounded-full'/>
         </div>
         <div className='absolute border dark:border-[#333333] border-gray-400 rounded-full h-[610px] w-[610px] mt-52  rodade '>

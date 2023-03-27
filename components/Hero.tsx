@@ -19,7 +19,7 @@ function Hero(props: any) {
           initial={{ opacity: 0,x:-60,y:-40 }}
           animate={{ opacity: 1,x:0,y:0 }}
           transition={{ duration: 1, delay: 4 }}
-          className="absolute -left-28 lg:-top-[9vw] -top-20 z-50"
+          className="absolute lg:-left-28 -left-32  lg:-top-[9vw] -top-20 z-50"
         >
           <Image
             src={"/astro.svg"}

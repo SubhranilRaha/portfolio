@@ -25,7 +25,6 @@ function Project({}: Props) {
       </motion.div>
       <div className="lg:hidden md:hidden flex flex-col gap-72">
         {/* smaller screen */}
-      
         {/* 1st Project s*/}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -41,7 +40,7 @@ function Project({}: Props) {
               <div className="bg-black/70 w-full h-full absolute z-10 transition-all duration-300 rounded-lg"></div>
 
               <Image
-                src={"/Subrotube.png"}
+                src={"/Zubrotube.png"}
                 alt=""
                 width={500}
                 height={500}
@@ -308,7 +307,7 @@ function Project({}: Props) {
                 <BsFillArrowRightCircleFill className="text-red-500 text-7xl hidden group-hover:block transition duration-500" />
               </div>
               <Image
-                src={"/Subrotube.png"}
+                src={"/Zubrotube.png"}
                 alt=""
                 width={600}
                 height={600}

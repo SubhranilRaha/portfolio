@@ -189,9 +189,11 @@ function Navbar(props: any) {
               )}
             </li>
             <li>
+            <Link href="/subhranilrahacv.pdf" download="subhranilrahacv target='_blank'">
               <button className="py-2 px-4 border-2 border-[#e75151] rounded text-[#e75151] mb-5">
                 Resume
               </button>
+            </Link>
             </li>
           </ul>
         </div>
