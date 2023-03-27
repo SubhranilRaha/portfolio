@@ -35,6 +35,7 @@ export default function Home() {
         <title>Subhranil Raha</title>
         <meta name="" content="" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="w3KGvIVvBxVIpFLC_sLy8-H84jqpNflI_3Ky0yGa2t0" />
       </Head>
     <div className="dark:bg-[rgb(37,38,42)]  dark:text-white bg-[#DCE4E6]  h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar-thumb-red-400/80 scrollbar-thin scrollbar-thumb-rounded-full ">
       
